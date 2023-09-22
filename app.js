@@ -37,3 +37,13 @@ button.addEventListener('click', function() {
         msgError.style='display: none';
     }    
 })
+
+function suppressionFormulaire(){
+    const firstName = document.getElementById('first-name');
+    const lastName = document.getElementById('last-name');
+    const msg = document.getElementById('message');
+
+    firstName.value = '';
+    lastName.value = '';
+    msg.value = '';
+}
