@@ -24,4 +24,16 @@ button.addEventListener('click', function() {
     let firstName = document.getElementById('first-name').value;
     let lastName = document.getElementById('last-name').value;
     let msg = document.getElementById('message').value;
+
+    if (firstName === '' || lastName === '' || msg === ''){
+        var msgError = document.getElementById('error-message');
+        msgError.style='';
+        event.preventDefault();
+    }
+    else {
+        createDiv(firstName, lastName, msg);
+        suppressionFormulaire();
+        var msgError = document.getElementById('error-message');
+        msgError.style='display: none';
+    }    
 })
