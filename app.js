@@ -14,3 +14,14 @@ function createDiv(firstName, lastName, msg){
     // Pour finir ajoutons la div a l'ensemble des commentaires
     commentList.appendChild(newDiv);
 }
+
+let button = document.querySelector("button");
+
+button.addEventListener('click', function() {
+
+    event.preventDefault();
+
+    let firstName = document.getElementById('first-name').value;
+    let lastName = document.getElementById('last-name').value;
+    let msg = document.getElementById('message').value;
+})
